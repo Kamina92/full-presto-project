@@ -24,12 +24,12 @@
                     @csrf
                         <h5 class="mt-3 fw-bold">{{__('ui.reg-name')}}</h5>
                         <div class="form-floating mb-3">
-                          <input type="text" id="registerTitle" class="form-control input-register"  aria-describedby="emailHelp" name="name" placeholder="Nome e Cognome">
+                          <input type="text" id="registerTitle" class="form-control input-register"  aria-describedby="emailHelp" name="name" placeholder="Nome e Cognome" value={{old('name')}}>
                           <label for="registerTitle" class="form-label text-black-50">{{__('ui.reg-name')}}</label>
                         </div>
                         <h5 class="mt-3 fw-bold">{{__('ui.reg-email')}}</h5>
                         <div class="form-floating mb-3">
-                          <input type="email" id="registerEmail"  class="form-control input-register" name="email" placeholder="name@example.com">
+                          <input type="email" id="registerEmail"  class="form-control input-register" name="email" placeholder="name@example.com" value={{old('email')}}>
                           <label for="registerEmail" class="form-label text-black-50">{{__('ui.reg-email')}}</label>
                         </div>
                         <h5 class="mt-3 fw-bold">{{__('ui.reg-pass')}}</h5>
